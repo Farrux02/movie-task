@@ -1,0 +1,25 @@
+main {
+    margin-top: 55px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1000px 440px;
+}
+
+@media (max-width: 1200px) {
+    .section-grid{
+        grid-template-columns: 420px 300px;
+    }
+}
+
+@media (max-width: 926px) {
+    main{
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .section-grid {
+        display: block;
+    }
+}

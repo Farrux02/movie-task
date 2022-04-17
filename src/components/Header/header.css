@@ -1,0 +1,42 @@
+header{
+    height: 110px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.header-nav__logo{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 16px;
+}
+
+.header-nav__links{
+    display: flex;
+    width: 246px;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@media (max-width: 926px) {
+    header{
+        height: 90px;
+    }
+
+    .header-nav{
+        position: relative;
+    }
+
+    .header-nav__links{
+        position: absolute;
+        bottom: 10px;
+        left: 70px;
+    }
+}

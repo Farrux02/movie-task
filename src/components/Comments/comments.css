@@ -1,0 +1,125 @@
+.comments {
+    position: relative;
+    max-height: 915px;
+    border: 1px solid #ccc;
+}
+
+.comments-heading {
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}
+
+.comments-heading h2 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 16px;
+    color: #fff;
+    padding: 30px;
+}
+
+.comments-main {
+    overflow: auto;
+    max-height: 365px;
+    padding: 40px;
+    color: #FFFFFF;
+}
+
+.comments-main span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.comments-main p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 40px;
+}
+
+.comments-form-wrapper{
+    height: 208px;
+    border-top: 1px solid #ccc;
+    padding: 40px;
+}
+
+.comments-form input, .comments-form textarea{
+    width: 360px;
+    height: 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #17171B;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 15px;
+    color: #fff;
+}
+
+.comments-form input::placeholder, .comments-form textarea::placeholder {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.comments-form textarea {
+    height: 120px;
+    padding: 24px 15px;
+    margin-top: 15px;
+    resize: none;
+}
+
+.form-btn{
+    position: absolute;
+    right: 40px;
+    margin-top: 15px;
+    width: 80px;
+    height: 30px;
+    background: #885FFB;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .comments {
+        top: 300px;
+        max-height: 785px;
+    }
+    .comments-main {
+        padding: 20px;
+        max-height: 400px;
+    }
+
+    .comments-main p {
+        margin-bottom: 20px;
+    }
+
+    .comments-form-wrapper{
+        padding: 20px;
+    }
+    .comments-form input, .comments-form textarea{
+        width: 260px;
+    }
+}
+
+@media (max-width: 926px) {
+    .comments {
+        top: 50px;
+        max-height: 785px;
+        margin-bottom: 30px;
+    }
+
+    .form-btn{
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .comments-form input, .comments-form textarea{
+        width: 340px;
+    }
+}
